@@ -2,7 +2,7 @@
 ![Akzidenz-Grotesk (1)-modified](https://github.com/YosfanEilay/Crowdstrike-Deploy/assets/132997318/0efe4f7d-ea13-4ff3-a92a-60ba90f1a7a0)
 
 ## What is Crowdstrike Deploy?
-(short answer: Deploy Crowdstrike from the client Live Terminal\Live Response EDR tool)
+(short answer: Deploy Crowdstrike from the client Live Terminal\Live Response EDR tool) </br>
 Have you ever been in an incident response situation where the only remote investigation tool available was something like Microsoft Defender? We all know the limitations of Microsoft Defender's Live Response, especially when it comes to executing PowerShell commands during a session.
 </br> </br>
 That's why I created Crowdstrike Deploy! Crowdstrike Deploy is the ultimate solution for incident responders who need to deploy Crowdstrike sensors quickly and discreetly. No longer do you have to wait for the client's IT team to find time to install your Crowdstrike sensor. With Crowdstrike Deploy, you can install the Crowdstrike sensor secretly, without triggering any alerts on the client's side.
