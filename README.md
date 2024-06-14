@@ -59,3 +59,8 @@ you can now execute the tool in any supported environment you want! </br>
 2. From the Live Terminal upload Crowdstrike-Deploy.ps1 to the machine.
 3. Click on "PowerShell" and execute Crowdstrike-Deploy.ps1.
 4. Done.
+5. 
+
+## Need Help?
+Need help? found a bug? add a feature? </br>
+Don't hesitate to contact me by [creating an issue](https://github.com/YosfanEilay/Crowdstrike-Deploy/issues/new).
