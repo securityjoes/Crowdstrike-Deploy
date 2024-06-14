@@ -25,8 +25,8 @@ Write-Output ""
 ###### Please Paste Your Information in Here ######
 $SensorLink = "" # Crowdstrike Sensor Download Link
 $SensorSig1 = "" # Crowdstrike Sensor Hash (SHA256)
-$TenantName = "" # Crowdstrike Tenant Name
 $TenantCID  = "" # Crowdstrike Tenant CID
+$TenantName = "" # Crowdstrike Tenant Name
 ###################################################
 
 
