@@ -20,7 +20,7 @@ This table represents the current platforms supported by Crowdstrike Deploy.
 
 
 ## How to Configure Crowdstrike Deploy?
-To start working with Crowdstrike Deploy you need to configure the following inside the code:
+To start working with Crowdstrike Deploy you need to configure the following inside the Crowdstrike-Deploy.ps1 code:
  
 ```PowerShell
 ###### Please Paste Your Information in Here ######
