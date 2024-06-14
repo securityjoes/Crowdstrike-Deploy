@@ -32,4 +32,7 @@ $TenantCID  = "" # Crowdstrike Tenant CID
 1. Create a OneDrive direct download link for your Crowdstrike sensor, and paste it inside `$SensorLink = ""`. </br>
   1.1 [How to download Crowdstrike sensor.](https://www.dell.com/support/kbdoc/en-il/000156053/how-to-download-the-crowdstrike-falcon-sensor). </br>
   1.2 [How to create a OneDrive direct download link.](https://www.youtube.com/watch?v=eUF8NZPuM_4&t=88s) </br>
+</br> </br>
+2. Create a SHA256 hash for your Sensor file and paste it inside `$SensorSig1 = ""`. </br>
+ 2.1 [How to create a SHA256 file hash.](https://www.se.com/my/en/faqs/FAQ000244427/)
 
