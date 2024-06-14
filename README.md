@@ -11,11 +11,12 @@ Whether your client is using Palo Alto XDR Live Terminal, Microsoft Defender Liv
 
 ## Support Table
 This table represents the current platforms supported by Crowdstrike Deploy.
-| Operation System   | Support Status  | Cloud Service  | Support Status  | Platforms         | Support Status |
-|:------------------:|:---------------:|:--------------:|:---------------:|:-----------------:|:--------------:|
-| Windows 11         | ✔               | Dropbox        | ✖             | Falcon Crowdstrike | ✔              |
-| Linux              | ✖               | Google Drive   | ✖             | Microsoft Defender | ✔              |
-| Mac                | ✖               | MEGA           | ✖             | Palo Alto XDR      | ✔              |
+| Operation System   | Support Status  | Cloud Service  | Support Status  | Platforms          | Support Status |
+|:------------------:|:---------------:|:--------------:|:---------------:|:------------------:|:--------------:|
+| Windows 10         |                 | OneDrive       | ✔              | Locally            | ✔              |
+| Windows 11         | ✔               | Dropbox        | ✖              | Falcon Crowdstrike | ✔              |
+| Linux              | ✖               | Google Drive   | ✖              | Microsoft Defender | ✔              |
+| Mac                | ✖               | MEGA           | ✖              | Palo Alto XDR      | ✔              |
 
 ## How to Configure Crowdstrike Deploy?
 To start working with Crowdstrike Deploy you need to configure the following inside the code:
