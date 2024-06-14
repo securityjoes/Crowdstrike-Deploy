@@ -10,9 +10,13 @@ Whether your client is using Palo Alto XDR Live Terminal, Microsoft Defender Liv
 ###### "Deploy Fast, Defend Faster."</br>
 
 ## Support Table
+This table represents the current platforms supported by Crowdstrike Deploy.
 | Operation System   | Support Status  | Cloud Service  | Support Status  |     
 |:------------------:|:---------------:|:---------------:|:---------------:|
 | Windows 10         | ✔               | OneDrive        | ✔              |
 | Windows 11         | ✔               | Dropbox         | ✖              |
 | Linux              | ✖               | Google Drive    | ✖              |
 | Mac                | ✖               | MEGA            | ✖              |
+
+## How to Configure Crowdstrike Deploy?
+To be able to use Crowdstrike Deploy, you need to configure 
