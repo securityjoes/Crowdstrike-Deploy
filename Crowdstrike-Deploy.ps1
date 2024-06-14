@@ -24,7 +24,7 @@ Write-Output ""
 
 ###### Please Paste Your Information in Here ######
 $SensorLink = "" # Crowdstrike Sensor Download Link
-$OriginalSensorHash = "" # Crowdstrike Sensor Hash (SHA256)
+$SensorSig1 = "" # Crowdstrike Sensor Hash (SHA256)
 $TenantName = "" # Crowdstrike Tenant Name
 $TenantCID  = "" # Crowdstrike Tenant CID
 ###################################################
@@ -63,8 +63,8 @@ Write-Output "[+] Download has started. The time required will depend on the hos
 
 
 # Check if the Downloaded Sensor File is Corrupted
-$DownloadedSensorHash = (Get-FileHash -Algorithm SHA256 -Path $DstPath).hash
-if ($OriginalSensorHash -eq $DownloadedSensorHash) {
+$SensorSig2 = (Get-FileHash -Algorithm SHA256 -Path $DstPath).hash
+if ($SensorSig1 -eq $SensorSig2) {
     Write-Output "[+] Crowdstrike sensor was successfully downloaded. Sensor installtion started."
 }
 else {
