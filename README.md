@@ -62,5 +62,5 @@ you can now execute the tool in any supported environment you want! </br>
 5. 
 
 ## Need Help?
-Need help? found a bug? add a feature? </br>
+Found a bug? Need help? do you want to add a feature? </br>
 Don't hesitate to contact me by [creating an issue](https://github.com/YosfanEilay/Crowdstrike-Deploy/issues/new).
