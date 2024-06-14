@@ -19,7 +19,17 @@ This table represents the current platforms supported by Crowdstrike Deploy.
 | Mac                | ✖               | MEGA            | ✖              |
 
 ## How to Configure Crowdstrike Deploy?
-To be able to use Crowdstrike Deploy, you need to configure 4 variables in the code. </br>
-First, download the latest version of Crowdstrike Deploy by clicking on the green `<> Code` button at the top of the repository. </br>
-Then open Crowdstrike Deploy on your preferred ISE, could be PowerShell ISE or even Notepad ++, and add the following data:
+To start working with Crowdstrike Deploy you need to configure the following inside the code:
+ 
+```PowerShell
+###### Please Paste Your Information in Here ######
+$SensorLink = "" # Crowdstrike Sensor Download Link
+$SensorSig1 = "" # Crowdstrike Sensor Hash (SHA256)
+$TenantName = "" # Crowdstrike Tenant Name
+$TenantCID  = "" # Crowdstrike Tenant CID
+###################################################
+```
+1. **$SensorLink** - Create a OneDrive direct download link for your Crowdstrike sensor, and paste it inside `$SensorLink = ""`. </br>
+  1.1 [How to download Crowdstrike sensor.](https://www.dell.com/support/kbdoc/en-il/000156053/how-to-download-the-crowdstrike-falcon-sensor). </br>
+  1.2 [How to create a OneDrive direct download link.](https://www.youtube.com/watch?v=eUF8NZPuM_4&t=88s) </br>
 
