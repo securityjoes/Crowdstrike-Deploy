@@ -9,7 +9,7 @@ That's why I created Crowdstrike Deploy! Crowdstrike Deploy is the ultimate solu
 Whether your client is using Palo Alto XDR Live Terminal, Microsoft Defender Live Response, or even if there is no EDR solution in place, Crowdstrike Deploy gets the job done with a single push of a button. Save precious time, take control of the situation, and stop incidents in their tracks with Crowdstrike Deploy!
 ###### "Deploy Fast, Defend Faster."</br>
 
-## Support Details
+## Support Table
 | Operation System   | Support Status  | Cloud Service  | Support Status  |     
 |:------------------:|:---------------:|:---------------:|:---------------:|
 | Windows 10         | ✔               | OneDrive        | ✔              |
