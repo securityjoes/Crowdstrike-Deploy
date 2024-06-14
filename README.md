@@ -25,8 +25,8 @@ To start working with Crowdstrike Deploy you need to configure the following ins
 ###### Please Paste Your Information in Here ######
 $SensorLink = "" # Crowdstrike Sensor Download Link
 $SensorSig1 = "" # Crowdstrike Sensor Hash (SHA256)
-$TenantName = "" # Crowdstrike Tenant Name
 $TenantCID  = "" # Crowdstrike Tenant CID
+$TenantName = "" # Crowdstrike Tenant Name
 ###################################################
 ```
 1. Create a OneDrive direct download link for your Crowdstrike sensor, and paste it inside `$SensorLink = ""`. </br>
@@ -36,3 +36,7 @@ $TenantCID  = "" # Crowdstrike Tenant CID
 2. Create a SHA256 file signature for your Sensor file and paste it inside `$SensorSig1 = ""`. </br>
  2.1 [How to create a SHA256 file signature.](https://www.se.com/my/en/faqs/FAQ000244427/)
 
+3. Copy your tenant CID and paste it inside `$TenantCID  = ""`. </br>
+ 3.1 [How to get your tenant CID.](https://www.dell.com/support/kbdoc/en-us/000129349/how-to-obtain-the-crowdstrike-cid) </br>
+
+4. Copy your tenant name and paste it inside `$TenantName = ""`. </br>
