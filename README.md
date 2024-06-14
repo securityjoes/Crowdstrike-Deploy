@@ -40,3 +40,22 @@ $TenantName = "" # Crowdstrike Tenant Name
  3.1 [How to get your tenant CID.](https://www.dell.com/support/kbdoc/en-us/000129349/how-to-obtain-the-crowdstrike-cid) </br>
 
 4. Copy your tenant name and paste it inside `$TenantName = ""`. </br>
+
+## How to use Crowdstrike Deploy?
+After you finished configuring the necessary variables inside the code, </br>
+you can now execute the tool in any supported environment you want! </br>
+
+#### Local Machine Deploy Guild
+1. Open PowerShell and execute Crowdstrike-Deploy.ps1, that's it.
+
+#### Microsoft Defender Deploy Guide
+1. Choose a machine and initiate a Live Response session.
+2. Upload Crowdstrike-Deploy.ps1 to the Defender library.
+3. Run the script from the Live Response session.
+4. Done.
+
+#### Palo Alto XDR Deploy Guild
+1. Choose a machine and initiate Live a Live Terminal.
+2. From the Live Terminal upload Crowdstrike-Deploy.ps1 to the machine.
+3. Click on "PowerShell" and execute Crowdstrike-Deploy.ps1.
+4. Done.
