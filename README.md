@@ -20,7 +20,7 @@ This table represents the current platforms supported by Crowdstrike Deploy.
 
 
 ## How to Configure Crowdstrike Deploy?
-First you need to configure the following variable inside the Crowdstrike-Deploy.ps1 code:
+First, you need to configure the following variable inside the Crowdstrike-Deploy.ps1 code:
  
 ```PowerShell
 ###### Please Paste Your Information in Here ######
