@@ -2,7 +2,7 @@
 ![Akzidenz-Grotesk (1)-modified](https://github.com/YosfanEilay/Crowdstrike-Deploy/assets/132997318/0efe4f7d-ea13-4ff3-a92a-60ba90f1a7a0)
 
 ## What is Crowdstrike Deploy?
-(short answer: Deploy Crowdstrike from the client other EDR tool)
+(Short answer: This tool can deploy Crowdstrike from Microsoft Defender Live Response or Palo Alto XDR Live Terminal and even on a local machine)
 </br> </br>
 Have you ever been in an incident response situation where the only remote investigation tool available was something like Microsoft Defender? We all know the limitations of Microsoft Defender's Live Response, especially when it comes to executing PowerShell commands during a session.
 </br> </br>
