@@ -63,6 +63,13 @@ you can now execute the tool in any supported environment you want! </br>
 2. From the Live Terminal upload Crowdstrike-Deploy.ps1 to the machine.
 3. Click on "PowerShell" and execute Crowdstrike-Deploy.ps1.
 4. Done.
+   
+## How to use Crowdstrike Deploy on Linux?
+Just drop the file locally on your machine or any platform mentioned above </br>
+and run the "Crowdstrike-Deploy.sh" bash script as root, like in this example:
+```
+eilay@UBUSRV01:~$ sudo ./Crowdstrike-Deploy.sh
+```
 
 ## Need Help?
 Found a bug? Need help? do you want to add a feature? </br>
