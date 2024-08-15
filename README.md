@@ -18,7 +18,7 @@ This table represents the current platforms supported by Crowdstrike Deploy.
 |:------------------:|:---------------:|:--------------:|:---------------:|:------------------:|:--------------:|
 | Windows 10         | ✔               | OneDrive       | ✔              | Locally            | ✔              |
 | Windows 11         | ✔               | Dropbox        | ✖              | Falcon Crowdstrike | ✔              |
-| Linux              | ✖               | Google Drive   | ✖              | Microsoft Defender | ✔              |
+| Linux              | ✔               | Google Drive   | ✖              | Microsoft Defender | ✔              |
 | Mac                | ✖               | MEGA           | ✖              | Palo Alto XDR      | ✔              |
 
 
