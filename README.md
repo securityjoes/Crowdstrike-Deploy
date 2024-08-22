@@ -1,4 +1,4 @@
-# Crowdstrike-Deploy 1.0v
+# Crowdstrike-Deploy 1.1v
 ![Akzidenz-Grotesk (1)-modified](https://github.com/YosfanEilay/Crowdstrike-Deploy/assets/132997318/0efe4f7d-ea13-4ff3-a92a-60ba90f1a7a0)
 
 ## What is Crowdstrike Deploy?
