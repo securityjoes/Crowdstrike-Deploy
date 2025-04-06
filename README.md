@@ -1,4 +1,6 @@
 # Crowdstrike-Deploy 1.1v
+###### “Don’t settle for anything less — be the best when it matters most.” </br>
+###### — Crowdstrike-Deploy </br>
 ![ChatGPT Image Apr 6, 2025, 02_30_38 PM](https://github.com/user-attachments/assets/48347b82-b329-443a-955b-31ff4f8102c1)
 
 ## What is Crowdstrike Deploy?
