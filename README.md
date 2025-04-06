@@ -6,9 +6,9 @@ Have you ever been in an incident response situation where the only remote inves
 </br> </br>
 That’s why I created Crowdstrike Deploy — a cross-platform toolkit designed for incident responders. It enables fast, discreet deployment of the CrowdStrike sensor across Linux, Windows, and macOS environments
 </br> </br>
-No longer do you have to wait for the client's IT team to coordinate installations or manually troubleshoot edge cases. Whether you're working through Palo Alto XDR Live Terminal, Microsoft Defender Live Response, or on systems without any EDR solution in place, Crowdstrike Deploy empowers you to take control with minimal friction.
+No longer do you have to wait for the client's IT team to coordinate Crowdstrike installations for you, now you can do it secretly by yourself. Whether you're working through Palo Alto XDR Live Terminal, Microsoft Defender Live Response, or on any EDR solution that you don't really like to work with, Crowdstrike Deploy empowers you to take control and deploy it!
 </br> </br>
-This repository includes a wide variety of deployment techniques, automation utilities, and practical tweaks tailored to real-world constraints faced during high-pressure incidents. It’s built to save you time, reduce friction, and get your sensor deployed—fast.
+This repository includes a wide variety of deployment methods, so read the whole `README.md` and choose what method fits your case.
 ###### "Deploy Fast, Defend Faster."</br>
 
 ## Support Table
