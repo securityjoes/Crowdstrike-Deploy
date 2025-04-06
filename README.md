@@ -11,17 +11,7 @@ No longer do you have to wait for the client's IT team to coordinate Crowdstrike
 This repository includes a wide variety of deployment methods, so read the whole `README.md` and choose what method fits your case.
 ###### "Deploy Fast, Defend Faster."</br>
 
-## Support Table
-This table represents the current platforms supported by Crowdstrike Deploy.
-| Operation System   | Support Status  | Cloud Service  | Support Status  | Platforms          | Support Status |
-|:------------------:|:---------------:|:--------------:|:---------------:|:------------------:|:--------------:|
-| Windows 10         | ✔               | OneDrive       | ✔              | Locally            | ✔              |
-| Windows 11         | ✔               | Dropbox        | ✖              | Falcon Crowdstrike | ✔              |
-| Linux              | ✔               | Google Drive   | ✖              | Microsoft Defender | ✔              |
-| Mac                | ✖               | MEGA           | ✖              | Palo Alto XDR      | ✔              |
-
-
-## How to Configure Crowdstrike Deploy?
+## Method 1
 First, you need to configure the following variable inside the Crowdstrike-Deploy.ps1 code:
  
 ```PowerShell
