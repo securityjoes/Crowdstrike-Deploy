@@ -13,7 +13,7 @@ This repository includes a wide variety of deployment methods, so read the whole
 ###### "Deploy Fast, Defend Faster."</br>
 
 ## Method 1 - Deploying Crowdstrike From Dropbox
-this
+[Under Work..]
 
 ## Need Help?
 Found a bug? Need help? do you want to add a feature? </br>
