@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# method: 1
-# method version: v1.1
-# method description: using dropbox to download the sensor and install it on a linux machine
-
 # Crowdstrike-Deploy Banner
 echo ""
 echo "  ██████╗██████╗  ██████╗ ██╗    ██╗██████╗ ███████╗████████╗██████╗ ██╗██╗  ██╗███████╗"
