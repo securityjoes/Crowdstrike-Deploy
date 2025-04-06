@@ -17,7 +17,8 @@ Write-Output "                     ╚═════╝ ╚══════�
 Write-Output ""
 Write-Output "                           Created & Maintained by: Eilay Yosfan"
 Write-Output "                                   GitHub.com/YosfanEilay"
-Write-Output "                                        Version: 1.0"
+Write-Output "                                        Version: 1.1"
+Write-Output "                                          Method: 1"
 Write-Output ""
 #endregion
 
@@ -47,13 +48,13 @@ else {
 }
 
 
-# Test Connection to OneDrive
-$PingStatus = Test-Connection -ComputerName "onedrive.live.com" -Count 2 -ErrorAction SilentlyContinue | Select-Object -Property *
+# Test Connection to Dropbox
+$PingStatus = Test-Connection -ComputerName "dropbox.com" -Count 2 -ErrorAction SilentlyContinue | Select-Object -Property *
 if ($PingStatus) {
-    Write-Output "[+] OneDrive is reachable."
+    Write-Output "[+] Dropbox is reachable."
 }
 else {
-    Write-Output "[!] OneDrive is not reachable, might be related to host network or organization policy. Deploy might fail."
+    Write-Output "[!] Dropbox is not reachable, might be related to host network or organization policy. Deploy might fail."
 }
 
 
