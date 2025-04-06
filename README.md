@@ -1,5 +1,5 @@
 # Crowdstrike-Deploy 1.1v
-![Akzidenz-Grotesk (1)-modified](https://github.com/YosfanEilay/Crowdstrike-Deploy/assets/132997318/0efe4f7d-ea13-4ff3-a92a-60ba90f1a7a0)
+![ChatGPT Image Apr 6, 2025, 02_30_38 PM](https://github.com/user-attachments/assets/48347b82-b329-443a-955b-31ff4f8102c1)
 
 ## What is Crowdstrike Deploy?
 Have you ever been in an incident response situation where the only remote investigation tool available was something like Microsoft Defender? We all know the limitations of Microsoft Defender's Live Response, especially when it comes to executing live PowerShell/Bash scripts during an IR.
