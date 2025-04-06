@@ -2,7 +2,7 @@
 ![Akzidenz-Grotesk (1)-modified](https://github.com/YosfanEilay/Crowdstrike-Deploy/assets/132997318/0efe4f7d-ea13-4ff3-a92a-60ba90f1a7a0)
 
 ## What is Crowdstrike Deploy?
-Have you ever been in an incident response situation where the only remote investigation tool available was something like Microsoft Defender? We all know the limitations of Microsoft Defender's Live Response, especially when it comes to executing PowerShell commands during a session.
+Have you ever been in an incident response situation where the only remote investigation tool available was something like Microsoft Defender? We all know the limitations of Microsoft Defender's Live Response, especially when it comes to executing live PowerShell/Bash scripts during an IR.
 </br> </br>
 That’s why I created Crowdstrike Deploy — a cross-platform toolkit designed for incident responders. It enables fast, discreet deployment of the CrowdStrike sensor across Linux, Windows, and macOS environments
 </br> </br>
