@@ -18,7 +18,6 @@ echo "                     ╚═════╝ ╚══════╝╚═�
 echo ""
 echo "                           Created & Maintained by: Eilay Yosfan"
 echo "                                   GitHub.com/YosfanEilay"
-echo "                                        Version: 1.1"
 echo "                                          Method: 1"
 echo ""
 
