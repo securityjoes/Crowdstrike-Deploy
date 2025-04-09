@@ -61,8 +61,9 @@ curl -L -o "$DstPath" -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) 
 
 # Check if the Downloaded Sensor File is Corrupted
 SensorSig2=$(shasum -a 256 "$DstPath" | awk '{print $1}')
-SensorSig1=${SensorSig1,,}
-SensorSig2=${SensorSig2,,}
+SensorSig1=$(echo "$SensorSig1" | tr '[:upper:]' '[:lower:]')
+SensorSig2=$(echo "$SensorSig2" | tr '[:upper:]' '[:lower:]')
+
 if [ "$SensorSig1" == "$SensorSig2" ]; then
     echo "[+] Crowdstrike sensor was successfully downloaded. Sensor installation started."
 else
