@@ -17,7 +17,6 @@ Write-Output "                     ╚═════╝ ╚══════�
 Write-Output ""
 Write-Output "                           Created & Maintained by: Eilay Yosfan"
 Write-Output "                                   GitHub.com/YosfanEilay"
-Write-Output "                                        Version: 1.1"
 Write-Output "                                          Method: 1"
 Write-Output ""
 #endregion
