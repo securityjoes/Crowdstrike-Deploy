@@ -31,7 +31,7 @@ $TenantName = "" # Crowdstrike Tenant Name
 - [How to configure - $SensorLink](https://www.youtube.com/watch?v=k6xvaop8qBE)
 - [How to configure - $SensorSig1](https://www.sharepointdiary.com/2022/08/how-to-get-file-hash-using-powershell.html)
 - [How to configure - $TenantCID](https://www.dell.com/support/kbdoc/en-il/000129349/how-to-obtain-the-crowdstrike-cid)
-- [How to configure - $TenantName](Just paste the tenant name.)
+- How to configure - $TenantName (Just paste the tenant name.)
 
 4. That’s it, you can now run the tool. If no errors occur, CrowdStrike has been successfully installed.
 
