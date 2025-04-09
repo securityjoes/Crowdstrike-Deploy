@@ -23,10 +23,10 @@ echo "                                          Method: 1"
 echo ""
 
 ###### Please Paste Your Information in Here ######
-SensorLink='https://www.dropbox.com/scl/fi/uvt0g06qzrxoed55649kj/falcon-sensor_7.23.0-17607_amd64.deb?rlkey=gphx5hkwso17v4fk2ggo4si98&st=8sy1mnsf&dl=1' # Crowdstrike Sensor Download Link
-SensorSig1="4CFBCF819C9CF8FD0A0B7150313DEA8538A9B75CE472A35DC67780D434887EFE" # Crowdstrike Sensor Hash (SHA256)
-TenantCID="8D2DAEC5D5D1469788B85B357DFFB298-BA"  # Crowdstrike Tenant CID
-TenantName="Security Joes" # Crowdstrike Tenant Name
+SensorLink='' # Crowdstrike Sensor Download Link
+SensorSig1="" # Crowdstrike Sensor Hash (SHA256)
+TenantCID=""  # Crowdstrike Tenant CID
+TenantName="" # Crowdstrike Tenant Name
 ###################################################
 
 # Prerequisite Variable Load
