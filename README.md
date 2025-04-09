@@ -20,7 +20,7 @@ This method involves uploading the CrowdStrike sensor to Dropbox, then using a s
 3. Open the script in a text editor and configure the following 4 variables:
 
 ```
-# this variables is from the windows script but its the same for Linux/Mac
+# These variables are from the Windows script, but they are the same for Linux and macOS.
 ###### Please Paste Your Information in Here ######
 $SensorLink = "" # Crowdstrike Sensor Download Link
 $SensorSig1 = "" # Crowdstrike Sensor Hash (SHA256)
