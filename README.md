@@ -35,6 +35,9 @@ $TenantName = "" # Crowdstrike Tenant Name
 
 4. That’s it, you can now run the tool. If no errors occur, CrowdStrike has been successfully installed.
 
+## Method 2 - 
+[work on progress]
+
 ## Need Help?
 Found a bug? Need help? do you want to add a feature? </br>
 Don't hesitate to contact me by [creating an issue](https://github.com/YosfanEilay/Crowdstrike-Deploy/issues/new).
