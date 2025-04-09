@@ -1,0 +1,91 @@
+#!/bin/bash
+
+# Crowdstrike-Deploy Banner
+echo ""
+echo "  ██████╗██████╗  ██████╗ ██╗    ██╗██████╗ ███████╗████████╗██████╗ ██╗██╗  ██╗███████╗"
+echo " ██╔════╝██╔══██╗██╔═══██╗██║    ██║██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██║██║ ██╔╝██╔════╝"
+echo " ██║     ██████╔╝██║   ██║██║ █╗ ██║██║  ██║███████╗   ██║   ██████╔╝██║█████╔╝ █████╗"  
+echo " ██║     ██╔══██╗██║   ██║██║███╗██║██║  ██║╚════██║   ██║   ██╔══██╗██║██╔═██╗ ██╔══╝"  
+echo " ╚██████╗██║  ██║╚██████╔╝╚███╔███╔╝██████╔╝███████║   ██║   ██║  ██║██║██║  ██╗███████╗"
+echo "  ╚═════╝╚═╝  ╚═╝ ╚═════╝  ╚══╝╚══╝ ╚═════╝ ╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚══════╝"
+echo ""                                                                                       
+echo "                     ██████╗ ███████╗██████╗ ██╗      ██████╗ ██╗   ██╗"                 
+echo "                     ██╔══██╗██╔════╝██╔══██╗██║     ██╔═══██╗╚██╗ ██╔╝"                 
+echo "                     ██║  ██║█████╗  ██████╔╝██║     ██║   ██║ ╚████╔╝"                  
+echo "                     ██║  ██║██╔══╝  ██╔═══╝ ██║     ██║   ██║  ╚██╔╝"                   
+echo "                     ██████╔╝███████╗██║     ███████╗╚██████╔╝   ██║"                    
+echo "                     ╚═════╝ ╚══════╝╚═╝     ╚══════╝ ╚═════╝    ╚═╝"
+echo ""
+echo "                           Created & Maintained by: Eilay Yosfan"
+echo "                                   GitHub.com/YosfanEilay"
+echo "                                          Method: 1"
+echo ""
+
+###### Please Paste Your Information in Here ######
+SensorLink='' # Crowdstrike Sensor Download Link
+SensorSig1="" # Crowdstrike Sensor Hash (SHA256)
+TenantCID=""  # Crowdstrike Tenant CID
+TenantName="" # Crowdstrike Tenant Name
+###################################################
+
+# Prerequisite Variable Load
+Hostname=$(hostname)
+RunPath=$(pwd)
+DstPath="$RunPath/CrowdstrikeSensor.pkg"
+
+# Check if the script is run as root (or with sudo)
+if [ "$EUID" -ne 0 ]; then
+    echo "[!] This script must be run as root. Please use 'sudo ./Crowdstrike-Deploy.sh'."
+    exit 1
+fi
+
+# Test if Host is Connected to the internet
+if ping -c 2 8.8.8.8 &> /dev/null; then
+    echo "[+] Host is connected to the internet."
+else
+    echo "[!] Host is not connected to the internet."
+    exit 1
+fi
+
+# Test Connection to Dropbox
+if ping -c 2 "dropbox.com" &> /dev/null; then
+    echo "[+] Dropbox is reachable."
+else
+    echo "[!] Dropbox is not reachable, might be related to host network or organization policy. Deploy might fail."
+fi
+
+# Download Crowdstrike Sensor
+echo "[+] Download has started, the time required will depend on the host's bandwidth."
+echo # Blank Line
+curl -L -o "$DstPath" -H "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X)" "$SensorLink"
+
+# Check if the Downloaded Sensor File is Corrupted
+SensorSig2=$(shasum -a 256 "$DstPath" | awk '{print $1}')
+SensorSig1=${SensorSig1,,}
+SensorSig2=${SensorSig2,,}
+if [ "$SensorSig1" == "$SensorSig2" ]; then
+    echo "[+] Crowdstrike sensor was successfully downloaded. Sensor installation started."
+else
+    echo "[!] The sensor file is corrupted, likely due to an interrupted download. You can try again."
+    rm -f "$DstPath"
+    exit 1
+fi
+
+# Start Crowdstrike Installation Process
+echo "[+] Showing installation process:"
+installer -pkg "$DstPath" -target /
+
+# Configure the Falcon sensor
+/Applications/Falcon.app/Contents/Resources/falconctl -s --cid="$TenantCID"
+
+# Start the sensor (usually auto-starts, but we ensure it)
+launchctl load /Library/LaunchDaemons/com.crowdstrike.falcon.Agent.plist
+
+# show that falcon crowdstrike sensor process is running using ps aux
+echo "[+] Showing that falcon is indeed running:"
+ps aux | grep "falcon"
+echo # Blank Line
+
+# Print Success Message
+echo "[+] Done. $Hostname will be available on host management under the tenant $TenantName in 5-10 minutes."
+echo ""
