@@ -57,7 +57,7 @@ fi
 # Download Crowdstrike Sensor
 echo "[+] Download has started, the time required will depend on the host's bandwidth."
 echo # Blank Line
-curl -L -o CrowdstrikeSensor.deb -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" "$SensorLink"
+curl -L -o "$DstPath" -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" "$SensorLink"
 
 # Check if the Downloaded Sensor File is Corrupted
 SensorSig2=$(openssl sha256 "$DstPath" | awk '{print $2}')
