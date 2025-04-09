@@ -14,7 +14,21 @@ This repository includes a wide variety of deployment methods, so read the whole
 ###### "Deploy Fast, Defend Faster."</br>
 
 ## Method 1 - Deploying Crowdstrike From Dropbox
-[Under Work..]
+This method involves uploading the CrowdStrike sensor to Dropbox, then using a script to download the sensor from Dropbox and install it on the host.
+1. Download the latest version of `CrowdStrike-Deploy` by clicking the green `<> Code` button, then selecting `Download ZIP`.
+2. Select your operating system, navigate to the `Method_1` folder, and download the corresponding deployment script.
+3. Open the script in a text editor and configure the following 4 variables:
+
+```
+# this variables is from the windows script but its the same for Linux/Mac
+###### Please Paste Your Information in Here ######
+$SensorLink = "" # Crowdstrike Sensor Download Link
+$SensorSig1 = "" # Crowdstrike Sensor Hash (SHA256)
+$TenantCID  = "" # Crowdstrike Tenant CID
+$TenantName = "" # Crowdstrike Tenant Name
+###################################################
+```
+- [How to configure `$SensorLink`](sss)
 
 ## Need Help?
 Found a bug? Need help? do you want to add a feature? </br>
