@@ -1,0 +1,1 @@
+run /usr/bin/sudo --CommandLine="/Applications/Falcon.app/Contents/Resources/falconctl  uninstall --maintenance-token PUT_TOKEN_HERE"
