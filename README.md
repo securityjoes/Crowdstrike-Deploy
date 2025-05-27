@@ -52,7 +52,7 @@ TenantName=""            # Display name for tenant (for logging)
 ############################################################################
 ```
 So why this method is working like this: in Microsoft defender there is a library upload limit, somthing like 10MB, so you can't upload the Crowdstrike sensor to the Defender library and just deploy it. so this method make it work.
-1. Edit the script, change `Operation` to "Split" `Parts` to "6" and `OriginalFilePath` to the sensor path.
+1. This part your are doing on your own Linux host, not the host you want to deploy Crowdstrike on, so start by editing the script, change `Operation` to "Split" `Parts` to "6" and `OriginalFilePath` to the sensor path.
 2. Run the script, and upload the 6 parts to Defender library and in to the host.
 3. Edit the script to "Deploy" and fill in the rest of the information, and run the tool again, deploy mode is not only rebuilds the sensor it is also automatically initiates a sensor installation
 And that's it, now you have CrowdStrike on this host.
