@@ -36,7 +36,7 @@ $TenantName = "" # Crowdstrike Tenant Name
 4. That’s it, you can now run the tool. If no errors occur, CrowdStrike has been successfully installed.
 
 ## Method 2 - Split Sensor into Parts, Rebuild it, Deploy it
-###### The below example is how to deploy Crowdstrike from Defender live terminal on Linux Ubuntu.
+###### The below example is how to deploy Falcon Crowdstrike from Microsoft Defender live terminal on a Linux Ubuntu machine.
 This method is intended for situations where the host you want to deploy CrowdStrike on is behind a WAF and a policy that disables the use of third-party cloud storage. In such cases, you can't use Method 1—for example, if the host is unable to download files from Dropbox due to the WAF restrictions, so this method is perfect for you.
 1. Download the latest version of `CrowdStrike-Deploy` by clicking the green `<> Code` button, then selecting `Download ZIP`.
 2. Select your operating system, navigate to the `Method_2` folder, and download the corresponding deployment script.
