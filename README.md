@@ -39,8 +39,24 @@ $TenantName = "" # Crowdstrike Tenant Name
 This method is intended for situations where the host you want to deploy CrowdStrike on is behind a WAF and a policy that disables the use of third-party cloud storage. In such cases, you can't use Method 1—for example, if the host is unable to download files from Dropbox due to the WAF restrictions, so this method is perfect for you.
 1. Download the latest version of `CrowdStrike-Deploy` by clicking the green `<> Code` button, then selecting `Download ZIP`.
 2. Select your operating system, navigate to the `Method_2` folder, and download the corresponding deployment script.
-3. Open the script in a text editor and configure the following 4 variables:
-[work on progress]
+3. Open the script in a text editor and configure the following 6 variables:
+
+```
+####################### Please Paste Your Information in Here ##############
+Operation=""             # Choose operation: "Split" or "Deploy"
+Parts=""                 # Number of parts to split the file into
+OriginalFilePath=""      # Full path to the original file (for splitting)
+SplittedFilesLocation="" # Path where split parts are stored (for deploying)
+CrowdstrikeCID=""        # Tenant CID string
+TenantName=""            # Display name for tenant (for logging)
+############################################################################
+```
+So why this method is working like this? in Microsoft defender there is a library upload limit, somthing like 10MB, so you can't upload the Crowdstrike sensor to the Defender library and just deploy it. so this method make it work.
+1. Edit the script, change `Operation` to "Split" `Parts` to "6" and `OriginalFilePath` to the sensor path.
+2. Run the script, and upload the 6 parts to Defender library and in to the host.
+3. Edit the script to "Deploy" and fill in the rest of the information, and run the tool again.
+And that's it, now you have CrowdStrike on this host.
+Important Notice: in `SplittedFilesLocation` use this location "/var/opt/microsoft/mdatp/response" as this is the default path that store the file you upload from Defender library 
 
 ## Need Help?
 Found a bug? Need help? do you want to add a feature? </br>
