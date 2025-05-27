@@ -1,4 +1,4 @@
-# Crowdstrike-Deploy 1.1v
+# Crowdstrike-Deploy 1.2v
 ###### “Don’t settle for anything less — be the best when it matters most.” </br>
 ![ChatGPT Image Apr 9, 2025, 10_21_17 AM](https://github.com/user-attachments/assets/befbe76a-c2d5-4951-b2b8-bfdff873482a)
 ###### Created & Maintained by: [Eilay Yosfan](https://github.com/YosfanEilay#-eilay-yosfan)
